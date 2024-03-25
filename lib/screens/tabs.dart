@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meals/models/meal.dart';
 import 'package:meals/screens/categories.dart';
+import 'package:meals/screens/filters.dart';
 import 'package:meals/screens/meals.dart';
 import 'package:meals/widgets/main_drawer.dart';
 
@@ -55,6 +56,18 @@ class _TabsScreenState extends State<TabsScreen> {
     });
   }
 
+  // close the side drawer when the meals tab is clicked, open filters screen if filters is clicked
+  void _setScreen(String identifer) {
+    Navigator.of(context).pop();
+    if (identifer == 'Filters') {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (ctx) => const FiltersScreen(),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // storing the categoriesScreen as activePage for navigation
@@ -74,7 +87,9 @@ class _TabsScreenState extends State<TabsScreen> {
 
     // returning the design & functionality of the widget
     return Scaffold(
-      drawer: const MainDrawer(),
+      drawer: MainDrawer(
+        onSelectScreen: _setScreen,
+      ),
       appBar: AppBar(
         title: Text(activePageTitle),
       ),
