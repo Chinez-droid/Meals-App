@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/f389459e-9961-464f-8dc5-66860aa3dc50
 - Implicit and Explicit Animations: The app employed animatedBuilder and animatedController for the animations
 
 ## ⚒️ Installation
-To get started with the shopping list app, follow these steps:
+To get started with the meals app, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Chinez-droid/meals.git
