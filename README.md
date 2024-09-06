@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/f389459e-9961-464f-8dc5-66860aa3dc50
 To get started with the shopping list app, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Chinez-droid/Meals-App.git
+   git clone https://github.com/Chinez-droid/meals.git
    cd meals
 2. Install dependencies:
    ```bash
