@@ -15,7 +15,7 @@ To get started with the shopping list app, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Chinez-droid/Meals-App.git
-   cd shopping_list
+   cd meals
 2. Install dependencies:
    ```bash
    flutter pub get
